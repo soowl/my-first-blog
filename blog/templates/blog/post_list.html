@@ -1,20 +1,19 @@
 <html>
     <head>
-        <title>Django girls blog</title>
+        <title>Django Girls blog</title>
     </head>
     <body>
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
+
+        {% for post in posts %}
         <div>
+            <p>published: {{post.published_date}}</p>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ </p>
+        </div>
+        {% endfor %}
         
-            <p>published: 2019/5/14</p>
-            <h2><a href = "">my first post</a> </h2>
-            <p>It works.</p>
-        </div>
-        <div>
-            <p>represent: 2019/5/14</p>
-            <h2><a href = "">second post</a></h2>
-        </div>
     </body>
 </html>
